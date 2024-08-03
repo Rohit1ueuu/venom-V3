@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Fetch environment variables
-API_TOKEN = os.getenv('API_TOKEN')
-ADMIN_ID = os.getenv('ADMIN_ID')
+API_TOKEN = os.getenv('7419595455:AAGZstA7H7FZakPGw9gtVbF9THWbI3bqZYQ')
+ADMIN_ID = os.getenv('907345225')
 MAX_RESTARTS = int(os.getenv('MAX_RESTARTS', 5))
 RESTART_PERIOD = int(os.getenv('RESTART_PERIOD', 60))  # Seconds
 CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', 5))  # Seconds
