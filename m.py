@@ -21,7 +21,7 @@ LOG_FILE = "log.txt"
 KEY_FILE = "keys.json"
 
 # Cooldown settings
-COOLDOWN_TIME = 0  # in seconds
+COOLDOWN_TIME = 0 # in seconds
 CONSECUTIVE_ATTACKS_LIMIT = 2
 CONSECUTIVE_ATTACKS_COOLDOWN = 20  # in seconds
 
@@ -187,8 +187,8 @@ async def handle_bgmi(message):
             try:
                 port = int(command[2])
                 time = int(command[3])
-                if time > 300:
-                    response = "Please enter a time less than 300 seconds."
+                if time > 500:
+                    response = "Please enter a time less than 500 seconds."
                 else: 
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
